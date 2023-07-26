@@ -5,13 +5,14 @@ import { Provider } from 'react-redux';
 import store from './redux/store';
 import HooksCakeContainer from './components/HooksCakeContainer';
 import { useDispatch } from 'react-redux';
+import NewCakeContainer from './components/NewCakeContainer';
 
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <HooksCakeContainer></HooksCakeContainer>
+        <NewCakeContainer></NewCakeContainer>
         
       </div>
     </Provider>
