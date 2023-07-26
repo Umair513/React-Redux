@@ -6,14 +6,15 @@ import store from './redux/store';
 import HooksCakeContainer from './components/HooksCakeContainer';
 import { useDispatch } from 'react-redux';
 import NewCakeContainer from './components/NewCakeContainer';
+import UserContainer from './components/UserContainer';
+
 
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <NewCakeContainer></NewCakeContainer>
-        
+       <UserContainer></UserContainer>  
       </div>
     </Provider>
   );
